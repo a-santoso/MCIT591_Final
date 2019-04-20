@@ -21,6 +21,14 @@ public class LogRegCalculator {
 	private double coef_term_num;
 	private double coef_total_payment;
 
+	
+	/**
+	 * Constructor - not initialized
+	 */
+	public LogRegCalculator() {
+		
+	}
+	
 	/**
 	 * Constructor for Logistic Regression Calculator
 	 * @param coef_constant
