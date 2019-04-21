@@ -1,7 +1,11 @@
+package testing;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import main.Loan;
+import main.LogRegCalculator;
 
 class LogRegCalc_Test {
 
@@ -12,7 +16,7 @@ class LogRegCalc_Test {
 		
 		double output = logRegCalTest.predictDefault(loanTest);
 		
-		System.out.println(output);
+		// System.out.println(output);
 		
 		assertEquals(3.3038492872965484E234,output);
 		

@@ -1,3 +1,4 @@
+package main;
 /**
  * Main class that functions as loan default predictor runner
  * This class serves as interface with users also

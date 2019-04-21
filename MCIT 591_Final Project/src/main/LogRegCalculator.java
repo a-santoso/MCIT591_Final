@@ -1,3 +1,4 @@
+package main;
 /**
  * Logistic Regression Calculator class that contains logistic regression coefficients and calculation
  * to predict output based on loan input
@@ -83,6 +84,8 @@ public class LogRegCalculator {
 	
 				
 	}
+	
+	
 
 	public void setCoef_constant(double coef_constant) {
 		this.coef_constant = coef_constant;

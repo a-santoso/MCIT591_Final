@@ -1,3 +1,4 @@
+package main;
 /**
  * Loan class that contains all information about loan and borrower in instance variables:
  * annual_income, term_number, loan_amount, etc
