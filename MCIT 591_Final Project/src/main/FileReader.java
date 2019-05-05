@@ -48,5 +48,17 @@ public class FileReader {
 		return parsedCoefficients;
 	}
 	
+	public static void main(String[] args) {
+		
+		FileReader x = new FileReader("coefficient.csv");
+		
+		// assertEquals(1.405,x.getParsedCoefficients().get(0),0.00001);
+		// assertEquals(2.3,x.getParsedCoefficients().get(1),0.00001);
+		
+		System.out.println(x.getParsedParameters());
+		System.out.println(x.getParsedCoefficients());
+		
+	}
+	
 	
 }

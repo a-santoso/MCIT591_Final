@@ -30,6 +30,25 @@ public class LogRegCalculator {
 		
 	}
 	
+	
+	/**
+	 * Constructor - initialized with filereader parser
+	 */
+	public LogRegCalculator(FileReader coeff) {
+		this.coef_constant = coeff.parsedCoefficients.get(0);
+		this.coef_annual_income = coeff.parsedCoefficients.get(1);
+		this.coef_dti = coeff.parsedCoefficients.get(2);
+		this.coef_funded_amount = coeff.parsedCoefficients.get(3);
+		this.coef_grade_enc = coeff.parsedCoefficients.get(4);
+		this.coef_int_rate = coeff.parsedCoefficients.get(5);
+		// this.coef_issue_d = coeff.parsedCoefficients.get(6);
+		this.coef_loan_amount = coeff.parsedCoefficients.get(6);
+		this.coef_revol_balance = coeff.parsedCoefficients.get(7);
+		this.coef_term_num = coeff.parsedCoefficients.get(8);
+		this.coef_total_payment = coeff.parsedCoefficients.get(9);
+		
+	}
+	
 	/**
 	 * Constructor for Logistic Regression Calculator
 	 * @param coef_constant
@@ -80,7 +99,7 @@ public class LogRegCalculator {
 				loanInput.getTotal_payment() * coef_total_payment;
 		
 		// Calculate probability based on exponential sum of all coefficients and parameters
-		return Math.exp(prob);
+		return (1/(1+Math.exp(-prob)));
 	
 				
 	}
