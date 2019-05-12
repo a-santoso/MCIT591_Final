@@ -50,7 +50,7 @@ public class FileReader {
 	
 	public static void main(String[] args) {
 		
-		FileReader x = new FileReader("coefficient.csv");
+		FileReader x = new FileReader("coefficient_final.csv");
 		
 		// assertEquals(1.405,x.getParsedCoefficients().get(0),0.00001);
 		// assertEquals(2.3,x.getParsedCoefficients().get(1),0.00001);
