@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 
 import main.FileReader;
 
-class FileReader_TestParamFinal {
+class FileReader_TestParam4Final {
 
 	@Test
 	void test() {
         FileReader x = new FileReader("coefficient_final.csv");
 		
-		assertEquals("annual_inc",x.getParsedParameters().get(1));
-		assertEquals("dti",x.getParsedParameters().get(2));
+		
+		assertEquals("grade_enc",x.getParsedParameters().get(4));
 		
 		// System.out.println(x.getParsedParameters());
 		// System.out.println(x.getParsedCoefficients());

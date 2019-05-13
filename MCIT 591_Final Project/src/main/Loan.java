@@ -52,7 +52,19 @@ public class Loan {
 		this.term_number = term_number;
 		this.total_payment = total_payment;
 	}
-
+	
+	public void displayLoanInfo() {
+		System.out.println("Annual income: " + annual_income);
+		System.out.println("DTI: " + dti);
+		System.out.println("Funded_amount: " + funded_amount);
+		System.out.println("Grade: " + grade);
+		System.out.println("Rate: " + rate);
+		System.out.println("Loan amount: " + loan_amount);
+		System.out.println("Revol balance: " + revol_balance);
+		System.out.println("Term number: " + term_number);
+		System.out.println("Total payment: " + total_payment);
+	}
+	
 	public double getAnnual_income() {
 		return annual_income;
 	}

@@ -163,26 +163,7 @@ public class DefaultPredictor {
 			}
 		}
 		
-		/*
-		inputValidation = false;
-		while(!inputValidation) {
-			try {
-				System.out.println("6. Please fill issue date: ");
-				int input = userInputScanner.nextInt();
-				if(input >= 0) {
-					loanInput.setIssueDate(input);
-					inputValidation = true;
-				} else {
-					System.out.println("Invalid input, negative number is not allowed");
-				}
-			} catch (InputMismatchException e) {
-				System.out.println("Invalid input, number required");
-				userInputScanner.next();
-			}
-		}
-		
-		*/
-		
+				
 		inputValidation = false;
 		while(!inputValidation) {
 			try {
@@ -253,6 +234,8 @@ public class DefaultPredictor {
 			}
 		}
 		
+		// To check loan info - Disabled
+		//loanInput.displayLoanInfo();
 	
 		System.out.println();
 		System.out.println("CALCULATING ...");
@@ -273,20 +256,23 @@ public class DefaultPredictor {
 		System.out.println("--------------");
 		
 		System.out.println();
-		System.out.println("Example of 2 different profiles:");
+		System.out.println();
+		System.out.println();
+		System.out.println("Example of 2 different profiles (tested also in JUnits):");
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("                      Customer 1        |    Customer 2     ");
 		System.out.println("-------------------------------------------------------------");
 		System.out.println("Annual Income:            100000        |         18000          ");
 		System.out.println("DTI:        	              20        |            20          ");
 		System.out.println("Funded Amount:      	   10000        |          1000");
-		System.out.println("Grade of loan:      	       B        |             G  ");
+		System.out.println("Grade of loan:      	       C        |             G  ");
+		System.out.println("Interest rate:                10        |            10");
 		System.out.println("Loan amount:   	      	   10000        |          1000");
 		System.out.println("Revolve balance:      	   10000        |         10000");
 		System.out.println("Term number (months):         30        |            60");
 		System.out.println("Total payment:      	    5000        |           100");
 		System.out.println("-------------------------------------------------------------");
-		System.out.println("Default probability:   6.06528E-06      |    0.913190782");
+		System.out.println("Default probability:   0.0007883        |      0.987172");
 	}
 
 }
