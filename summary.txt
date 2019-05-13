@@ -1,7 +1,9 @@
+https://github.com/a-santoso/MCIT591_Final
+
 Our final project is a program to predict loan default-rate based on machine learning algorithms. The program is using Lending Club dataset from Kaggle (https://www.kaggle.com/wendykan/lending-club-loan-data) and the machine learning used is Logistic Regression.
 The program has 2 parts:
 1.	Machine Learning program (back-end)
-Machine Learning program is done in Python because it’s easier to perform data analyses and feature engineering as well as conduct machine learning operation in Python. This Python program will load the Lending Club data and use it to train and test ML model using Logistic Regression technique. The output of this program will be regression parameters and coefficients.
+Machine Learning program is done in Python because itâ€™s easier to perform data analyses and feature engineering as well as conduct machine learning operation in Python. This Python program will load the Lending Club data and use it to train and test ML model using Logistic Regression technique. The output of this program will be regression parameters and coefficients.
 Milestones achieved: Performed data exploration, cleansing and analysis (Feature Engineering), Built ML model with Logistic regression, Refine ML model 
 2.	Loan Predictor program (front-end)
 The loan predictor program is done in JAVA that will serve as main program for loan prediction. This program will receive Logistic regression parameters and coefficients from ML program and perform prediction of loan default based on user inputs.
